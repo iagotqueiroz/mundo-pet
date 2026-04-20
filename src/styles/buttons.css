@@ -1,0 +1,55 @@
+.btn {
+    cursor: pointer;
+    background-color: var(--content-brand);
+    font: var(--label-large);
+    text-transform: uppercase;
+    color: #050505;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(146, 130, 250, 0.3);
+
+    padding: 12px 20px;
+}
+
+.btn:hover {
+    background-color: var(--background-highlights);
+}
+
+.btn-new-schedule_box {
+    background-color: #23242C;
+    width: 100%;
+    padding: 24px 32px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-new-schedule {
+    width: 100%;
+}
+
+/* BOTÃO DE AGENDAR MODAL OVERLAY */
+#btn_to-schedule {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .btn-new-schedule_box {
+        background-color: transparent;
+        width: 40%;
+        padding: 0;
+        position: fixed;
+        bottom: 15px;
+        left: 100%;
+        transform: translateX(-105%);
+        z-index: 2;
+    }  
+}
+
+@media (min-width: 1024px) {
+    .btn-new-schedule_box {
+        width: 20%;
+    }
+}

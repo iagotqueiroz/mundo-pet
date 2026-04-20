@@ -1,0 +1,13 @@
+{
+  "schedules": [
+    {
+      "id": "1",
+      "name": "Igor",
+      "petName": "Mel",
+      "telephone": "27999773538",
+      "descriptionService": "Banho e tosa",
+      "date": "2026-04-20",
+      "time": "14:00"
+    }
+  ]
+}

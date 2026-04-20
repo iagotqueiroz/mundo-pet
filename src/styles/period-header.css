@@ -1,0 +1,88 @@
+/* PERIOD HEADER */
+.period {
+    background-color: var(--background-tertiary);
+    border-radius: 10px;
+}
+
+.period-header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+
+    border-bottom: 1px solid var(--border-divisor);
+}
+
+.period-header_content {
+    align-items: center;
+    column-gap: 12px;
+}
+
+.period-header_icon {
+    width: 19px;
+    height: 19px;
+}
+
+.period-header_title {
+    font: var(--label-large);
+    color: var(--content-primary);
+}
+
+.period-header_time {
+    font: var(--label-large);
+    color: var(--content-secondary);
+}
+
+/* PERIOD LIST */
+
+.schedule-list {
+    padding: 20px;
+}
+
+.schedule-list li + li{
+    border-top: .6px solid #353339;
+    padding-top: 12px;
+    
+}
+
+.schedule-item {
+    padding: 12px;
+}
+
+.schedule-item_date {
+    font: var(--label-medium);
+    color: var(--content-primary);
+}
+
+.schedule-item_name {
+    margin-left: 12px;
+    font: var(--paragraph-medium);
+    color: var(--content-secondary);
+
+    & strong {
+        color: var(--content-primary);
+    }
+}
+
+.schedule-item_service {
+    font: var(--paragraph-medium);
+    color: var(--content-secondary);
+}
+
+.btn-box_remove {
+    justify-content: end;
+}
+
+.btn-remove {
+    background-color: transparent;
+    border: none;
+
+    font: var(--paragraph-small);
+    color: var(--content-tertiary);
+}
+
+.btn-remove:hover {
+    color: var(--content-primary);
+    text-decoration: 1px underline var(--content-primary);
+    cursor: pointer;
+}
+

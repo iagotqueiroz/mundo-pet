@@ -1,0 +1,75 @@
+/* SCHEDULE HEADER */
+.schedule-header {
+    margin-top: 21px;
+    margin-bottom: 32px;
+}
+
+.schedule-header_title {
+    font: var(--title);
+    color: var(--content-primary);
+    margin-bottom: 4px;
+}
+
+.schedule-header_description {
+    font: var(--paragraph-medium);
+    color: var(--content-secondary);
+
+    margin-bottom: 12px;
+}
+
+/* INPUT */
+.date-input {
+    width: 183px;
+    height: 48px;
+
+}
+
+.date-input_label {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    width: 100%;
+    padding: 12px;
+
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.date-input_calendar_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.date-input_box {
+    width: 103px;
+    font: 400 16px/150% var(--ff-inter);
+    color: var(--content-secondary);
+    background-color: transparent;
+
+    border: transparent;
+}
+
+.date-input_box:focus {
+    outline: none;
+    color: var(--content-primary);
+}
+
+.date-input_box::-webkit-inner-spin-button,
+.date-input_box::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.date-input_arrow_icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .schedule-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

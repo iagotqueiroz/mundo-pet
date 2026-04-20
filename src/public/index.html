@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet</title>
+
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div>
+            <a href="#">
+                <img src="../assets/images/logo-mundo-pet.webp" alt="Logo mundo pet">
+            </a>
+        </div>
+    </header>
+
+    <main class="container flex">
+        <section class="schedule-header">
+            <div>
+                <h1 class="schedule-header_title">Sua agenda</h1>
+                <p class="schedule-header_description">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+            </div>
+
+            <div class="date-input">
+                <label for="date-input" class="date-input_label input-default input-hover input-focus">
+                    <span>
+                        <img src="../assets/icons/calendar-icon.svg" alt="Ícone de calendário" class="date-input_calendar_icon">
+                    </span>
+
+                    <input type="date" id="date-input" class="date-input_box">
+
+                    <span>
+                        <img src="../assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon">
+                    </span>
+                </label>
+            </div>
+        </section>
+
+        <section class="period">
+            <header class="period-header flex">
+                <div class="period-header_content flex">
+                    <img src="../assets/icons/morning-icon.svg" alt="Ícone manhã" class="period-header_morning_icon">
+                    <h2 class="period-header_title">Manhã</h2>
+                </div>
+
+                <div>
+                    <span class="period-header_time">09h-12h</span>
+                </div>
+            </header>
+
+            <ul id="morning-list" class="schedule-list">
+                <li>
+                    <article class="schedule-item">
+                        <div class="flex">
+                            <time datetime="" class="schedule-item_date">09:00</time>
+                            <p class="schedule-item_name">
+                                <strong>Thor</strong>
+                                / Fernanda Costa
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="schedule-item_service">Vacinação</p>
+                        </div>
+
+                        <div class="btn-box_remove  flex">
+                            <button type="button" class="btn-remove">Remover agendamento</button>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="period">
+            <header class="period-header flex">
+                <div class="period-header_content flex">
+                    <img src="../assets/icons/afternoon.svg" alt="Ícone tarde" class="period-header_icon">
+                    <h2 class="period-header_title">Tarde</h2>
+                </div>
+
+                <div>
+                    <span class="period-header_time">13h-18h</span>
+                </div>
+            </header>
+
+            <ul id="morning-list" class="schedule-list">
+                <li>
+                    <article class="schedule-item">
+                        <div class="flex">
+                            <time datetime="" class="schedule-item_date">13:00</time>
+                            <p class="schedule-item_name">
+                                <strong>Mel</strong>
+                                / João Souza
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="schedule-item_service">Corte de Unhas</p>
+                        </div>
+
+                        <div class="btn-box_remove  flex">
+                            <button type="button" class="btn-remove">Remover agendamento</button>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="schedule-item">
+                        <div class="flex">
+                            <time datetime="" class="schedule-item_date">14:00</time>
+                            <p class="schedule-item_name">
+                                <strong>Bella</strong>
+                                / Pedro Martins
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="schedule-item_service">Aplicação de Anti-pulgas</p>
+                        </div>
+
+                        <div class="btn-box_remove  flex">
+                            <button type="button" class="btn-remove">Remover agendamento</button>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="schedule-item">
+                        <div class="flex">
+                            <time datetime="" class="schedule-item_date">15:00</time>
+                            <p class="schedule-item_name">
+                                <strong>Simba</strong>
+                                / Juliana Rocha
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="schedule-item_service">Tosa Higiênica</p>
+                        </div>
+
+                        <div class="btn-box_remove  flex">
+                            <button type="button" class="btn-remove">Remover agendamento</button>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="period">
+            <header class="period-header flex">
+                <div class="period-header_content flex">
+                    <img src="../assets/icons/evening-icon.svg" alt="Ícone manhã" class="period-header_icon">
+                    <h2 class="period-header_title">Noite</h2>
+                </div>
+
+                <div>
+                    <span class="period-header_time">19h-21h</span>
+                </div>
+            </header>
+
+            <ul id="morning-list" class="schedule-list">
+                <li>
+                    <article class="schedule-item">
+                        <div class="flex">
+                            <time datetime="" class="schedule-item_date">20:00</time>
+                            <p class="schedule-item_name">
+                                <strong>Max</strong>
+                                / Camila Santos
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="schedule-item_service">Limpeza de Dentes</p>
+                        </div>
+
+                        <div class="btn-box_remove  flex">
+                            <button type="button" class="btn-remove">Remover agendamento</button>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <div class="btn-new-schedule_box">
+            <button type="button" class="btn btn-new-schedule">Novo Agendamento</button>
+        </div>
+    </main>
+
+    <div class="modal-overlay container">
+        <section>
+                <img class="modal-overlay_close_icon" src="..//assets/icons/close-icon.svg" alt="Ícone de fechar">
+
+            <header>
+                <h2 class="modal-overlay_title">Agende um atendimento</h2>
+                <p class="modal-overlay_descrption">Preencha os dados do cliente para realizar o agendamento:</p>
+            </header>
+
+            <form action="" class="flex input-new-schedule">
+                <div>
+                    <label for="tutor-name" class="input-new-schedule_label">Nome do tutor</label>
+                    <div class="flex input-new-schedule_box">
+                        <img src="../assets/icons/person-icon.svg" alt="Ícone de pessoa" class="input-new-schedule_icon">
+                        <input 
+                        type="text" 
+                        id="tutor-name" 
+                        name="tutor-name" 
+                        placeholder="Helena Souza"
+                        class="input-new-schedule_field">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="pet-name" class="input-new-schedule_label">Nome do pet</label>
+                    <div class="flex input-new-schedule_box">
+                        <img src="../assets/icons/paw-icon.svg" alt="Ícone de pata" class="input-new-schedule_icon">
+                        <input 
+                        type="text" 
+                        id="pet-name" 
+                        name="pet-name" 
+                        placeholder="Cheddar"
+                        class="input-new-schedule_field">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="tutor-telephone" class="input-new-schedule_label">Telefone</label>
+                    <div class="flex input-new-schedule_box">
+                        <img src="../assets/icons/telephone-icon.svg" alt="Ícone de telefone" class="input-new-schedule_icon">
+                        <input 
+                        type="tel" 
+                        id="tutor-telephone" 
+                        name="tutor-telephone" 
+                        placeholder="(00) 0 0000-0000"
+                        class="input-new-schedule_field">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="service-description" class="input-new-schedule_label">Descrição de serviço</label>
+                    <div class="flex input-new-schedule_box">   
+                        <textarea 
+                            maxlength="100"
+                            id="service-description" 
+                            name="service-description" 
+                            placeholder="Banho e tosa"
+                            class="input-new-schedule_field"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="input-new-schedule_label">Data</span>
+                    <div class="date-input input-new-schedule_date_and_time date-and-time_margin_top">
+                        <label for="date-input-form" class="date-input_label input-default input-hover input-focus">
+                            <span><img src="../assets/icons/calendar-icon.svg" alt="Ícone de calendário" class="date-input_calendar_icon"></span>
+                            <input type="date" id="date-input-form" class="date-input_box">
+                            <span class="input-new-schedule_arrow_icon"><img src="../assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon" ></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="date-input input-new-schedule_date_and_time">
+                    <span class="input-new-schedule_label">Hora</span>
+                    <label for="time-input-form" class="date-input_label input-default input-hover input-focus date-and-time_margin_top">
+                        <span><img src="../assets/icons/clock-icon.svg" alt="Ícone de Relógio" class="date-input_calendar_icon"></span>
+                        <input type="time" id="time-input-form" class="date-input_box">
+                        <span class="input-new-schedule_arrow_icon"><img src="../assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon"></span>
+                    </label>
+                </div>
+
+                <button type="button" class="btn" id="btn_to-schedule">AGENDAR</button>
+                
+            </form>
+        </section>
+    </div>
+</body>
+</html>

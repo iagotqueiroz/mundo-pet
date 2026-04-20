@@ -1,0 +1,12 @@
+#main-header div {
+    width: 153px;
+    background-color: var(--background-tertiary);
+    padding: 12px 20px;
+    border-bottom-right-radius: 12px;
+
+}
+
+#main-header div a img {
+    width: 113px;
+    height: 24px;
+}
