@@ -8,13 +8,18 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
     clean: true,
+    assetModuleFilename: "assets/[name][ext][query]",
   },
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
+      test: /\.css$/i,
+      use: ["style-loader", "css-loader"],
+    },
+    {
+      test: /\.(png|jpe?g|gif|svg|webp)$/i, // Processamento de imagens
+      type: 'asset/resource',  // Isso copia as imagens para a pasta dist
+    },
     ],
   },
   plugins: [

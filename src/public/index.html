@@ -12,7 +12,7 @@
     <header id="main-header">
         <div>
             <a href="#">
-                <img src="../assets/images/logo-mundo-pet.webp" alt="Logo mundo pet">
+                <img id="logo" src="assets/images/logo-mundo-pet.webp" alt="Logo mundo pet">
             </a>
         </div>
     </header>
@@ -27,13 +27,13 @@
             <div class="date-input">
                 <label for="date-input" class="date-input_label input-default input-hover input-focus">
                     <span>
-                        <img src="../assets/icons/calendar-icon.svg" alt="Ícone de calendário" class="date-input_calendar_icon">
+                        <img src="assets/icons/calendar-icon.svg" alt="Ícone de calendário" class="date-input_calendar_icon calendar-icon">
                     </span>
 
                     <input type="date" id="date-input" class="date-input_box">
 
                     <span>
-                        <img src="../assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon">
+                        <img src="assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon arrow-down-icon">
                     </span>
                 </label>
             </div>
@@ -42,7 +42,7 @@
         <section class="period">
             <header class="period-header flex">
                 <div class="period-header_content flex">
-                    <img src="../assets/icons/morning-icon.svg" alt="Ícone manhã" class="period-header_morning_icon">
+                    <img src="assets/icons/morning-icon.svg" alt="Ícone manhã" class="period-header_morning_icon" id="morning-icon">
                     <h2 class="period-header_title">Manhã</h2>
                 </div>
 
@@ -77,7 +77,7 @@
         <section class="period">
             <header class="period-header flex">
                 <div class="period-header_content flex">
-                    <img src="../assets/icons/afternoon.svg" alt="Ícone tarde" class="period-header_icon">
+                    <img src="assets/icons/afternoon.svg" alt="Ícone tarde" class="period-header_icon" id="afternoon-icon">
                     <h2 class="period-header_title">Tarde</h2>
                 </div>
 
@@ -152,7 +152,7 @@
         <section class="period">
             <header class="period-header flex">
                 <div class="period-header_content flex">
-                    <img src="../assets/icons/evening-icon.svg" alt="Ícone manhã" class="period-header_icon">
+                    <img src="assets/icons/evening-icon.svg" alt="Ícone manhã" class="period-header_icon" id="evening-icon">
                     <h2 class="period-header_title">Noite</h2>
                 </div>
 
@@ -189,9 +189,10 @@
         </div>
     </main>
 
+    <!-- INÍCIO MODAL OVERLAY -->
     <div class="modal-overlay container">
         <section>
-                <img class="modal-overlay_close_icon" src="..//assets/icons/close-icon.svg" alt="Ícone de fechar">
+                <img class="modal-overlay_close_icon" src="assets/icons/close-icon.svg" alt="Ícone de fechar">
 
             <header>
                 <h2 class="modal-overlay_title">Agende um atendimento</h2>
@@ -202,7 +203,7 @@
                 <div>
                     <label for="tutor-name" class="input-new-schedule_label">Nome do tutor</label>
                     <div class="flex input-new-schedule_box">
-                        <img src="../assets/icons/person-icon.svg" alt="Ícone de pessoa" class="input-new-schedule_icon">
+                        <img src="assets/icons/person-icon.svg" alt="Ícone de pessoa" class="input-new-schedule_icon" id="person-icon">
                         <input 
                         type="text" 
                         id="tutor-name" 
@@ -215,7 +216,7 @@
                 <div>
                     <label for="pet-name" class="input-new-schedule_label">Nome do pet</label>
                     <div class="flex input-new-schedule_box">
-                        <img src="../assets/icons/paw-icon.svg" alt="Ícone de pata" class="input-new-schedule_icon">
+                        <img src="assets/icons/paw-icon.svg" alt="Ícone de pata" class="input-new-schedule_icon" id="paw-icon">
                         <input 
                         type="text" 
                         id="pet-name" 
@@ -228,7 +229,7 @@
                 <div>
                     <label for="tutor-telephone" class="input-new-schedule_label">Telefone</label>
                     <div class="flex input-new-schedule_box">
-                        <img src="../assets/icons/telephone-icon.svg" alt="Ícone de telefone" class="input-new-schedule_icon">
+                        <img src="assets/icons/telephone-icon.svg" alt="Ícone de telefone" class="input-new-schedule_icon" id="telephone-icon">
                         <input 
                         type="tel" 
                         id="tutor-telephone" 
@@ -254,9 +255,9 @@
                     <span class="input-new-schedule_label">Data</span>
                     <div class="date-input input-new-schedule_date_and_time date-and-time_margin_top">
                         <label for="date-input-form" class="date-input_label input-default input-hover input-focus">
-                            <span><img src="../assets/icons/calendar-icon.svg" alt="Ícone de calendário" class="date-input_calendar_icon"></span>
+                            <span><img src="assets/icons/calendar-icon.svg" alt="Ícone de calendário" class="date-input_calendar_icon calendar-icon"></span>
                             <input type="date" id="date-input-form" class="date-input_box">
-                            <span class="input-new-schedule_arrow_icon"><img src="../assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon" ></span>
+                            <span class="input-new-schedule_arrow_icon"><img src="assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon arrow-down-icon" ></span>
                         </label>
                     </div>
                 </div>
@@ -264,14 +265,13 @@
                 <div class="date-input input-new-schedule_date_and_time">
                     <span class="input-new-schedule_label">Hora</span>
                     <label for="time-input-form" class="date-input_label input-default input-hover input-focus date-and-time_margin_top">
-                        <span><img src="../assets/icons/clock-icon.svg" alt="Ícone de Relógio" class="date-input_calendar_icon"></span>
+                        <span><img src="assets/icons/clock-icon.svg" alt="Ícone de Relógio" class="date-input_calendar_icon" id="clock-icon"></span>
                         <input type="time" id="time-input-form" class="date-input_box">
-                        <span class="input-new-schedule_arrow_icon"><img src="../assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon"></span>
+                        <span class="input-new-schedule_arrow_icon"><img src="assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon arrow-down-icon"></span>
                     </label>
                 </div>
 
                 <button type="button" class="btn" id="btn_to-schedule">AGENDAR</button>
-                
             </form>
         </section>
     </div>
