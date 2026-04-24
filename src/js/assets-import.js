@@ -9,6 +9,7 @@ import IconPerson from '../assets/icons/person-icon.svg';
 import IconPaw from '../assets/icons/paw-icon.svg';
 import IconTelephone from '../assets/icons/telephone-icon.svg';
 import IconClock from '../assets/icons/clock-icon.svg';
+import IconClose from '../assets/icons/close-icon.svg';
 
 
 // Encontrando as imagens no HTML e atribuindo as imagens importadas
@@ -48,3 +49,6 @@ telephoneIcon.src = IconTelephone;
 
 const clockIcon = document.getElementById("clock-icon");
 clockIcon.src = IconClock
+
+const closeIcon = document.getElementById("close-icon");
+closeIcon.src = IconClose;

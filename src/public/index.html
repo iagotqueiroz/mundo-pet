@@ -30,7 +30,7 @@
                         <img src="assets/icons/calendar-icon.svg" alt="Ícone de calendário" class="date-input_calendar_icon calendar-icon">
                     </span>
 
-                    <input type="date" id="date-input" class="date-input_box">
+                    <input type="date" id="date-input" class="date-input_box btnAbrir">
 
                     <span>
                         <img src="assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon arrow-down-icon">
@@ -192,7 +192,7 @@
     <!-- INÍCIO MODAL OVERLAY -->
     <div class="modal-overlay container">
         <section>
-                <img class="modal-overlay_close_icon" src="assets/icons/close-icon.svg" alt="Ícone de fechar">
+                <img class="modal-overlay_close_icon" id="close-icon" src="assets/icons/close-icon.svg" alt="Ícone de fechar">
 
             <header>
                 <h2 class="modal-overlay_title">Agende um atendimento</h2>
@@ -253,10 +253,10 @@
 
                 <div>
                     <span class="input-new-schedule_label">Data</span>
-                    <div class="date-input input-new-schedule_date_and_time date-and-time_margin_top">
+                    <div class="input-new-schedule_date_and_time date-and-time_margin_top date-input">
                         <label for="date-input-form" class="date-input_label input-default input-hover input-focus">
                             <span><img src="assets/icons/calendar-icon.svg" alt="Ícone de calendário" class="date-input_calendar_icon calendar-icon"></span>
-                            <input type="date" id="date-input-form" class="date-input_box">
+                            <input type="date" id="date-input-form" class="date-input_box btnAbrir">
                             <span class="input-new-schedule_arrow_icon"><img src="assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon arrow-down-icon" ></span>
                         </label>
                     </div>
@@ -266,7 +266,7 @@
                     <span class="input-new-schedule_label">Hora</span>
                     <label for="time-input-form" class="date-input_label input-default input-hover input-focus date-and-time_margin_top">
                         <span><img src="assets/icons/clock-icon.svg" alt="Ícone de Relógio" class="date-input_calendar_icon" id="clock-icon"></span>
-                        <input type="time" id="time-input-form" class="date-input_box">
+                        <input type="time" id="time-input-form" class="date-input_box btnAbrir">
                         <span class="input-new-schedule_arrow_icon"><img src="assets/icons/arrow-down.svg" alt="Ícone de seta para baixo" class="date-input_arrow_icon arrow-down-icon"></span>
                     </label>
                 </div>
