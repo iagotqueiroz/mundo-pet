@@ -49,6 +49,7 @@ main {
 }
 
 .container {
+    position: relative;
     width: 100%;
     max-width: 480px;
     padding: 0 1.25rem;
@@ -72,6 +73,18 @@ ul {
     list-style: none;
 }
 
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
 @media (min-width: 768px) {
     .container {
         width: 100%;
@@ -81,6 +94,7 @@ ul {
     }
 
     body {
+        position: relative;
         padding-bottom: 50px;
         background-color: var(--background-primary);
     }

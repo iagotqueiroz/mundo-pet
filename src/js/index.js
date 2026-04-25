@@ -5,3 +5,6 @@ import _ from 'lodash';
 // Importando JS
 import './assets-import.js'
 import './show-picker-inputs.js'
+import './min-day-and-time.js'
+import './app.js'
+import './open-and-close-modal.js'
