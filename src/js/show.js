@@ -2,9 +2,9 @@ import dayjs from "dayjs";
 
 // Seleciona as sessões
 
-const periodMorning = document.getElementById("morning-list");
-const periodAfternoon = document.getElementById("afternoon-list");
-const periodEvening= document.getElementById("eveneing-list");
+export const periodMorning = document.getElementById("morning-list");
+export const periodAfternoon = document.getElementById("afternoon-list");
+export const periodEvening= document.getElementById("eveneing-list");
 
 export function scheduleShow({dailySchedules}) {
     try {
@@ -16,6 +16,7 @@ export function scheduleShow({dailySchedules}) {
         // Renderiza os agendamentos por período
         dailySchedules.forEach((schedule) => {
             const item = document.createElement("li")
+            item.dataset.id = schedule.id
             item.innerHTML = `
                 <article class="schedule-item">
                     <div class="flex">
