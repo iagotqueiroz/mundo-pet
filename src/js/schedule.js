@@ -1,3 +1,4 @@
+import { closeModal } from "./open-and-close-modal.js"
 const form = document.querySelector('.input-new-schedule');
 
 
@@ -63,6 +64,7 @@ form.addEventListener("submit", async (event) => {
 
         alert("Agendamento casdastrado com sucesso!")
         form.reset()
+        closeModal()
     } else {
         alert("Agendamento fora do horário de atendimento.")
     }

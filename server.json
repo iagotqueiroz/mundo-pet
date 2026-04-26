@@ -1,4 +1,23 @@
 {
-  "schedules": [],
+  "schedules": [
+    {
+      "tutorName": "Iago",
+      "petName": "Pretinha",
+      "telephone": "27999776589",
+      "serviceDescription": "Nada",
+      "scheduleDate": "2026-04-29",
+      "scheduleTime": "19:28",
+      "id": "E40HFlm4Erk"
+    },
+    {
+      "tutorName": "Rana",
+      "petName": "Garfield",
+      "telephone": "27999776589",
+      "serviceDescription": "Banoooo",
+      "scheduleDate": "2026-04-29",
+      "scheduleTime": "15:30",
+      "id": "Ie1D0isSGsI"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

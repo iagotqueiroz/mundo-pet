@@ -18,11 +18,16 @@ export function openModal() {
 }
 
 closeButton.addEventListener('click', () => {
+    closeModal();
+})
+
+export function closeModal() {
+    
     modal.classList.add('hidden');
     modal.classList.remove('show');
 
     backgroundOverlay.classList.add('hidden');
     backgroundOverlay.classList.remove('show');
 
-    document.body.classList.remove('no-scroll')
-})
+    document.body.classList.remove('no-scroll');
+}
