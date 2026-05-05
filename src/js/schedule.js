@@ -14,14 +14,6 @@ form.addEventListener("submit", async (event) => {
         scheduleTime: document.getElementById("time-input-form").value,
     };
 
-    const hasEmptyField = Object.values(schedule).some(
-        (value) => !value || value.trim() === ""
-    );
-
-    if (hasEmptyField) {
-        alert("Preencha todos os campos.");
-        return;
-    }
 
     try {
         const schedulesResponse = await fetch(
